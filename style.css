@@ -1,7 +1,10 @@
 /**
  * Color Pallete
- * Grey:
+ * Grey: rgb(250, 250, 250)
  * Blue: rgb(0, 180, 240)
+ *
+ * Sizes
+ * Whitespace: 20px
  */
 * {
   box-sizing: border-box;
@@ -20,7 +23,7 @@ body {
 .Header {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 5px rgb(220, 220, 220);
+  box-shadow: 0 0 10px rgb(220, 220, 220);
   display: flex;
   height: 60px;
   justify-content: flex-end;
@@ -40,7 +43,7 @@ body {
 
 .Content {
   min-height: 100%;
-  padding: 80px 20px 80px 20px;
+  padding: 120px 20px 100px 20px;
 }
 
 .Content h1 {
@@ -63,12 +66,18 @@ body {
 }
 
 .Footer {
+  align-items: center;
   background-color: rgb(80, 80, 80);
   bottom: 0;
-  height: 60px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
   position: absolute;
   width: 100%;
 }
 
-.Social {
+.Footer img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
 }
