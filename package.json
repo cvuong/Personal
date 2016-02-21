@@ -4,7 +4,8 @@
   "description": "Personal website for Charlie Vuong (charlievuong.com)",
   "dependencies": {},
   "devDependencies": {
-    "ejs": "^2.4.1"
+    "ejs": "^2.4.1",
+    "mkdirp": "^0.5.1"
   },
   "scripts": {},
   "repository": {
