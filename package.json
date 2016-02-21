@@ -1,0 +1,16 @@
+{
+  "name": "charlievuong",
+  "version": "1.0.0",
+  "description": "Personal website for Charlie Vuong (charlievuong.com)",
+  "dependencies": {},
+  "devDependencies": {
+    "ejs": "^2.4.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvuong/Personal.git"
+  },
+  "author": "Charlie Vuong",
+  "homepage": "charlievuong.com"
+}
