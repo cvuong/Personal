@@ -12,10 +12,17 @@ publicPath = path.resolve(__dirname, '../public');
 ejsFilenames = fs.readdirSync(ejsPath);
 mkdirp.sync(publicPath);
 ejsFilenames.forEach(function(filename) {
-  var contents = fs.readFileSync(path.resolve(ejsPath, filename), 'utf8');
-  var html = ejs.render(contents);
-  var filenameAsHtml = path.basename(filename, '.ejs') + '.html';
-  fs.writeFileSync(path.resolve(publicPath, filenameAsHtml), html);
+  var fullPath = path.resolve(ejsPath, filename);
+
+  var stats = fs.statSync(fullPath);
+  if (stats.isFile()) {
+    var contents = fs.readFileSync(fullPath, 'utf8');
+    var html = ejs.render(contents, {
+      filename: fullPath
+    });
+    var filenameAsHtml = path.basename(filename, '.ejs') + '.html';
+    fs.writeFileSync(path.resolve(publicPath, filenameAsHtml), html);
+  }
 });
 
 
