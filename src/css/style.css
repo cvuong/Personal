@@ -39,19 +39,27 @@ body {
   text-transform: uppercase;
 }
 
-.Content {
+.Main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100%;
-  padding: 100px 30px 100px 30px;
+  padding: 80px 30px 100px 30px;
+}
+
+.Content {
+  max-width: 700px;
 }
 
 .Content h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 .Content p {
-  color: rgb(50, 50, 50);
+  color: rgb(80, 80, 80);
   font-family: 'Merriweather', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -78,4 +86,19 @@ body {
   width: 40px;
   height: 40px;
   margin: 0 20px;
+}
+
+@media(min-width: 700px) {
+  .Header a {
+    font-size: 16px;
+  }
+
+  .Content h1 {
+    font-size: 24px;
+  }
+
+  .Content p {
+    font-size: 24px;
+  }
+  
 }
