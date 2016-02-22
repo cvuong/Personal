@@ -73,7 +73,7 @@ body {
 
 .Footer {
   align-items: center;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(200, 200, 200);
   bottom: 0;
   display: flex;
   height: 80px;
@@ -83,8 +83,8 @@ body {
 }
 
 .Footer img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0 20px;
 }
 
