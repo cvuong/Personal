@@ -8,8 +8,7 @@
     "mkdirp": "^0.5.1"
   },
   "scripts": {
-    "build": "node scripts/make_static_pages && cp -r assets/images public/ && cp src/css/style.css public/ ",
-    "watch": ""
+    "build": "node scripts/make_static_pages && cp -r assets/images public/ && cp src/css/style.css public/ "
   },
   "repository": {
     "type": "git",
